@@ -21,6 +21,7 @@ public class Main {
     staticFileLocation("/public");
 
     get("/hello", (req, res) -> "Hello World");
+    get("/ucsb", (req, res) -> "Go Gauchos"); // added in for lab 03
 
     get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
